@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Title</title>
+<!--    <link rel="stylesheet" href="style.css">-->
+    <script src="https://unpkg.com/htmx.org@1.9.4"></script>
+</head>
+    <body>
+        <form hx-get="http://localhost:5059/name" hx-swap="innerHTML" hx-target=".result">
+            <input type="text" name="name">
+            <button type="submit">
+                Submit
+            </button>
+        </form>
+        
+        <div class="result" />
+    
+    </body>
+</html>
